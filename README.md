@@ -6,7 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![Image of Application](src/assets/screenshot.png)
 
 ## Description
+
 In this application clientside user can view GitHub users when application was loaded. He/She can search user from GitHub also when clicked on user it's automatically show the selected user repositories with total number of repositories, total fork count and star count in a particular repository.
+
+## Add Dependency
+
+Run `npm install` after clone the app to add all the dependecies in this project.(no third party dependency used)
 
 ## Development server
 
