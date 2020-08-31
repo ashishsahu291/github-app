@@ -1,0 +1,14 @@
+<!-- user search starts here -->
+<app-search></app-search>
+<!-- user search ends here -->
+<div class="userlist__wrapper">
+  <div class="noUsers" *ngIf="isError">No Users Found!!!</div>
+  <!-- <div>No User Found</div> -->
+  <!-- <div class="noUsers" *ngIf="usersLoading">Loading...</div> -->
+  <div style="text-align: center">
+    <app-loading *ngIf="usersLoading"></app-loading>
+  </div>
+  <div *ngIf="users">
+    <app-user [user]="userEl" *ngFor="let userEl of users"></app-user>
+  </div>
+</div>

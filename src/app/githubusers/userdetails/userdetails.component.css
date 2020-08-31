@@ -1,0 +1,41 @@
+.userDtls__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+
+.userDtls__wrapper .dtls_img {
+  width: 100px;
+}
+
+.userDtls__wrapper .dtls_img > img {
+  max-width: 100%;
+}
+
+.userRepo__wrapper {
+  max-height: 80vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.card__dtls {
+  width: 100%;
+}
+
+.card__nme__des h4 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.card__count img {
+  width: 12px;
+  height: 12px;
+}
+
+.card__count span {
+  margin-right: 10px;
+}

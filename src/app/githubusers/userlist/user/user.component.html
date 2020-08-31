@@ -1,0 +1,8 @@
+<div class="card" style="cursor: pointer" (click)="onSelected()">
+  <div class="card__img">
+    <img [src]="user.avatar_url" alt="{{ user.login }}" />
+  </div>
+  <div class="card__dtls">
+    <h4>{{ user.login }}</h4>
+  </div>
+</div>

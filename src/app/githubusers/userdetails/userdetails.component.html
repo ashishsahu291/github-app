@@ -1,0 +1,29 @@
+<!-- selected user repos starts here -->
+<!-- <app-userrepo></app-userrepo> -->
+<h2>{{ repos.length }} Repositories found for {{ user.login }}</h2>
+<div class="userRepo__wrapper">
+  <div class="card" *ngFor="let repo of repos">
+    <div class="card__dtls">
+      <div class="card__nme__des">
+        <h4>{{ repo.name }}</h4>
+        <p>
+          {{
+            repo.description == null ? "No Description Found" : repo.description
+          }}
+        </p>
+      </div>
+      <div class="card__count">
+        <span
+          ><img src="../../../assets/fork.svg" alt="" />
+          {{ repo.forks_count }}</span
+        >
+        <span
+          ><img src="../../../assets/star.svg" alt="" />
+          {{ repo.stargazers_count }}</span
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- selected user repos ends here -->
